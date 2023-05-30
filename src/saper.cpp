@@ -1,9 +1,15 @@
-//
-// Created by pawel on 30.05.2023.
-//
-#include <iostream>
+#include "saper.hpp"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+void MinesweeperBoard::debug_display() const {
+    for (int i = 0; i < height_; i++) {
+        for (int j = 0; j < width_; j++) {
+            char M = '.', o = '.', F = '.';
+            if (board_[i][j].hasMine_) { M = 'M'; }
+            if (board_[i][j].hasFlag_) { F = 'F'; }
+            if (board_[i][j].isRevealed_) { o = 'o'; }
+            std::cout << "[" << M << F << o << "] ";
+        }
+        std::cout << std::endl;
+    }
+
 }

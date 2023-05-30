@@ -11,4 +11,8 @@ Organizacja zespołu:
   -stworzenie zespołu w Asana
   -stworzenie wspólnego dokumentu w google docs
   -ustalenie używanego narzędzia i środowiska pracy - Clion, język C++
+ Klasa opisująca planszę
+  -wybór rozmiaru planszy
+  -stany pól (ukryte/odkryte, bezpieczne/mina, oflagowane)
+
 

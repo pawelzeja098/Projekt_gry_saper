@@ -25,7 +25,7 @@ void position ()
         }
     }
 }
-
+//czy koniec gry
 bool MinesweeperBoard::is_game_over() const {
     for (int row = 0; row < height_; row++) {
         for (int col = 0; col < width_; col++) {

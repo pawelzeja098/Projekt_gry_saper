@@ -46,11 +46,13 @@ public:
         std::random_device rd;
         std::mt19937 g(rd());
         std::shuffle(numer_pola.begin(), numer_pola.end(), g);
-// tera biope pierwsze ileśtam pól i na nich robię miny
-//for(auto i = 0; i < difficulty; i++){
-//    numer_pola[i]
-//
-//}
+
+// Ustawienie min na wylosowanych polach
+        for (auto i = 0; i < difficulty; i++) {
+            int row = (numer_pola[i] - 1) / width_;
+            int col = (numer_pola[i] - 1) % width_;
+            board_[row][col].hasMine_ = true;
+        }
 
 
         //wypisanie wektora pól

@@ -63,6 +63,8 @@ public:
 
     }
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
+    
+    bool is_game_over() const;
 
 private:
     Field board_[4][4];

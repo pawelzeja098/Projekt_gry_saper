@@ -13,3 +13,15 @@ void MinesweeperBoard::debug_display() const {
     }
 
 }
+//czy koniec gry
+bool MinesweeperBoard::is_game_over() const {
+    for (int row = 0; row < height_; row++) {
+        for (int col = 0; col < width_; col++) {
+            if (board_[row][col].hasMine_ && !board_[row][col].hasFlag_)
+                return false;
+            if (!board_[row][col].hasMine_ && !board_[row][col].isRevealed_)
+                return false;
+        }
+    }
+    return true;
+}

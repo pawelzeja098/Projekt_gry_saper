@@ -48,7 +48,7 @@ public:
         std::shuffle(numer_pola.begin(), numer_pola.end(), g);
 
 // Ustawienie min na wylosowanych polach
-        for (auto i = 0; i < difficulty; i++) {
+        for (std::size_t i = 0; i < (std::size_t) difficulty; i++) {
             int row = (numer_pola[i] - 1) / width_;
             int col = (numer_pola[i] - 1) % width_;
             board_[row][col].hasMine_ = true;

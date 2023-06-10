@@ -25,3 +25,16 @@ bool MinesweeperBoard::is_game_over() const {
     }
     return true;
 }
+
+int MinesweeperBoard::random_position()
+{
+    time_t t;
+    int poz_x, poz_y;
+
+    srand((unsigned)time(&t));
+
+    poz_x = rand()%width_;
+    poz_y = rand()%height_;
+
+    return poz_x * poz_y;
+}

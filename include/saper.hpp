@@ -65,6 +65,8 @@ public:
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
     
     bool is_game_over() const;
+//funkcja losuje pozycje na planszy zwraca numer pola
+    int random_position();
 
 private:
     Field board_[4][4];
@@ -74,6 +76,7 @@ private:
     int height_;
 //    int  size_ = height_*width_;
     GameMode mode_;
+
 
 };
 

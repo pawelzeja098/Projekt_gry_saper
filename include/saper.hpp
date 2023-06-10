@@ -67,6 +67,13 @@ public:
     bool is_game_over() const;
 //funkcja losuje pozycje na planszy zwraca numer pola
     int random_position();
+//funkcja zwiększa wynik
+    void increase_score(int points);
+//funkcja pobiera wynik osiągnięty przez gracza
+    int get_score() const{
+        return score_;
+    }
+
 
 private:
     Field board_[4][4];
@@ -76,7 +83,7 @@ private:
     int height_;
 //    int  size_ = height_*width_;
     GameMode mode_;
-
+    int score_;
 
 };
 

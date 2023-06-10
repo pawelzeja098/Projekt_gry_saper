@@ -38,3 +38,8 @@ int MinesweeperBoard::random_position()
 
     return poz_x * poz_y;
 }
+
+    void MinesweeperBoard::increase_score(int points)
+{
+    score_ += points;
+}

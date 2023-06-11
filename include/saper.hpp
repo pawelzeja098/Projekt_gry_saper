@@ -71,10 +71,14 @@ public:
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
     
     bool is_game_over() const;
-    //funkcja losuje pozycje na planszy zwraca numer pola
+    /*
+     * funkcja losuje pozycje na planszy zwraca numer pola
+     */
     int random_position();
-    //funkcja zwiększa wynik
 
+/*
+ * funckja zwiekszajaca wynik
+ */
 
     void increase_score(int points);
 
@@ -84,12 +88,16 @@ public:
     int get_score() const{
         return score_;
     }
-
+/*
+ * dodanie do wektora highscore nazwy i wyniku
+ */
     void add_to_highscore(const std::string& name) {
         highscore_.push_back({ name, score_ });
         sort_highscores();
     }
-
+/*
+ * wyświetlenie najlepszych wyników
+ */
     void display_highscores() const;
 
 

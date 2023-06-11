@@ -14,6 +14,7 @@
 #include <algorithm>
 
 
+
 enum GameMode  { DEBUG, EASY, NORMAL, HARD }; // jakie typy może przyjmować
 
 struct Field{
@@ -21,6 +22,11 @@ struct Field{
     bool hasFlag_ = false;
     bool isRevealed_ = false;
 } ;
+
+struct Score {
+    std::string name;
+    int score;
+};
 
 class MinesweeperBoard {
 public:
@@ -65,14 +71,26 @@ public:
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
     
     bool is_game_over() const;
-//funkcja losuje pozycje na planszy zwraca numer pola
+    //funkcja losuje pozycje na planszy zwraca numer pola
     int random_position();
-//funkcja zwiększa wynik
+    //funkcja zwiększa wynik
+
+
     void increase_score(int points);
-//funkcja pobiera wynik osiągnięty przez gracza
+
+    /*
+     * funkcja pobiera wynik osiągnięty przez gracza
+     */
     int get_score() const{
         return score_;
     }
+
+    void add_to_highscore(const std::string& name) {
+        highscore_.push_back({ name, score_ });
+        sort_highscores();
+    }
+
+    void display_highscores() const;
 
 
 private:
@@ -84,6 +102,9 @@ private:
 //    int  size_ = height_*width_;
     GameMode mode_;
     int score_;
+    std::vector<Score> highscore_;
+
+    void sort_highscores();
 
 };
 

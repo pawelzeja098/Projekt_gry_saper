@@ -1,5 +1,6 @@
 #include "saper.hpp"
 
+
 void MinesweeperBoard::debug_display() const {
     for (int i = 0; i < height_; i++) {
         for (int j = 0; j < width_; j++) {
@@ -39,7 +40,20 @@ int MinesweeperBoard::random_position()
     return poz_x * poz_y;
 }
 
-    void MinesweeperBoard::increase_score(int points)
+void MinesweeperBoard::increase_score(int points)
 {
     score_ += points;
+}
+
+
+void MinesweeperBoard::display_highscores() const{
+        std::cout << "Highscores:\n";
+        for (const auto& score : highscore_) {
+            std::cout << score.name << ": " << score.score << "\n";
+        }
+}
+void MinesweeperBoard::sort_highscores() {
+    std::sort(highscore_.begin(), highscore_.end(), [](const Score& s1, const Score& s2) {
+        return s1.score > s2.score;
+    });
 }

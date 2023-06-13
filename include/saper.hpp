@@ -100,6 +100,7 @@ public:
  */
     void display_highscores() const;
 
+    void place_flag(int row, int col);
 
 private:
     Field board_[4][4];

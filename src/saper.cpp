@@ -57,3 +57,8 @@ void MinesweeperBoard::sort_highscores() {
         return s1.score > s2.score;
     });
 }
+void MinesweeperBoard::place_flag(int row, int col) {
+    if (row >= 0 && row < height_ && col >= 0 && col < width_) {
+        board_[row][col].hasFlag_ = true;
+    }
+}

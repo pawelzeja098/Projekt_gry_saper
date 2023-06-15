@@ -1,6 +1,7 @@
 # npg_projekt
 Projekt na zajecia NPG
 BACKLOG PRODUKTU - GRA SAPER
+ABY PROGRAM DZIAŁAŁ, NALEŻY WYPAKOWAĆ PLIK googletest-master.zip
 
 Ustalenie funkcjonalności programu:
   -użytkownik powinien mieć możliwość wyboru trudności i rozmiaru planszy,

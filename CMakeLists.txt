@@ -14,4 +14,4 @@ set(SOURCES_FILES_TESTS
         )
 
 
-include(../SetCommonConfig.cmake)
+include(SetCommonConfig.cmake)

@@ -2,7 +2,8 @@
 
 
 int main() {
-    MinesweeperBoard board(4,4, EASY);
+    GameMode difficulty = chooseDifficulty();
+    MinesweeperBoard board(4,4, difficulty);
 
 //    bool game_over = mina.is_game_over();
     board.place_flag(0, 1);

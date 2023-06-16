@@ -14,6 +14,28 @@ void MinesweeperBoard::debug_display() const {
     }
 
 }
+//ustawianie poziomu trudności, bo komunikacja z konsolą powinna być
+GameMode chooseDifficulty(){
+
+    int difficulty;
+    std::cout << "Podaj poziom trudnosci: " << std::endl;
+    std::cout << "1 - latwy " << std::endl;
+    std::cout << "2 - normalny " << std::endl;
+    std::cout << "3 - trudny " << std::endl;
+
+    std::cin >> difficulty;
+
+    switch (difficulty)
+    {
+        case 0 : return GameMode::DEBUG;
+        case 1 : return GameMode::EASY;
+        case 2 : return GameMode::NORMAL;
+        case 3 : return GameMode::HARD;
+    }
+    // w razie gdyby nie to wpisał co trzeaba
+    return GameMode::DEBUG;
+}
+
 //czy koniec gry
 bool MinesweeperBoard::is_game_over() const {
     for (int row = 0; row < height_; row++) {

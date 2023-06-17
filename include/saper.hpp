@@ -138,13 +138,8 @@ private:
 
 };
 
-// funkcja, która pozawala na ciągłą grę
-bool playMinesweeperUntil(char myBoard[][SIZE], char realBoard[][SIZE], int mines[][2], int row,
-                          int col, int *movesLeft);
 
 GameMode chooseDifficulty();
-void playMinesweeper ();
-void printBoard(char myBoard[][MAXSIDE]);
 
 
 

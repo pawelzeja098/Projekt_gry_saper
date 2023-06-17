@@ -125,6 +125,9 @@ private:
 
 };
 
+// funkcja, która pozawala na ciągłą grę
+bool playMinesweeperUntil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE]
+
 GameMode chooseDifficulty();
 
 

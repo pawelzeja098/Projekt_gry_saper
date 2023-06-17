@@ -14,10 +14,3 @@ bool game_over = mina.is_game_over();
     return 0;
     }
 
-
-
-
-
-
-
-

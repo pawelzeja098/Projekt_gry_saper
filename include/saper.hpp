@@ -88,38 +88,67 @@ public:
 
 
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
-    
+
+
     bool is_game_over() const;
     /*
      * funkcja losuje pozycje na planszy zwraca numer pola
      */
     int random_position();
 
-/*
- * funckja zwiekszajaca wynik
- */
+
+    /*
+     * funckja zwiekszajaca wynik
+     */
 
     void increase_score(int points);
 
     /*
      * funkcja pobiera wynik osiągnięty przez gracza
      */
+
     int get_score() const{
         return score_;
     }
-/*
- * dodanie do wektora highscore nazwy i wyniku
- */
+    /*
+    * dodanie do wektora highscore nazwy i wyniku
+    */
     void add_to_highscore(const std::string& name) {
         highscore_.push_back({ name, score_ });
         sort_highscores();
     }
-/*
- * wyświetlenie najlepszych wyników
- */
+
+    /*
+     * wyświetlenie najlepszych wyników
+     */
     void display_highscores() const;
 
     void place_flag(int row, int col);
+
+
+
+    void reveal_field(int row, int col) {
+        if (row >= 0 && row < height_ && col >= 0 && col < width_ && !board_[row][col].isRevealed_) {
+            board_[row][col].isRevealed_ = true;
+            if (board_[row][col].hasMine_) {
+
+                std::cout << "Przegrales" << std::endl;
+            } else {
+                // Zwieksz wynik jesli zostalo wybrane pole bez miny
+                increase_score(10);
+
+                // Sprawdz i odkryj sasiadujace
+                if (count_adjacent_mines(row, col) == 0) {
+                    for (int i = -1; i <= 1; i++) {
+                        for (int j = -1; j <= 1; j++) {
+                            reveal_field(row + i, col + j);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 private:
     Field board_[4][4];
@@ -133,12 +162,22 @@ private:
     std::vector<Score> highscore_;
 
     void sort_highscores();
-
-};
+    int count_adjacent_mines(int row, int col) {
+        int count = 0;
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                int newRow = row + i;
+                int newCol = col + j;
+                if (newRow >= 0 && newRow < height_ && newCol >= 0 && newCol < width_ &&
+                    board_[newRow][newCol].hasMine_) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }};
 
 GameMode chooseDifficulty();
-
-
 
 
 

@@ -84,3 +84,4 @@ void MinesweeperBoard::place_flag(int row, int col) {
         board_[row][col].hasFlag_ = true;
     }
 }
+

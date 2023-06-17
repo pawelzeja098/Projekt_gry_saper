@@ -141,6 +141,8 @@ bool playMinesweeperUntil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE]
 
 GameMode chooseDifficulty();
 void playMinesweeper ();
+void printBoard(char myBoard[][MAXSIDE]);
+
 
 
 

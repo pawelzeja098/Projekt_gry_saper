@@ -84,6 +84,37 @@ void MinesweeperBoard::place_flag(int row, int col) {
         board_[row][col].hasFlag_ = true;
     }
 }
+bool isMine (int row, int col, char board[][MAXSIDE])
+{
+    if (board[row][col] == '*')
+        return (true);
+    else
+        return (false);
+}
+
+
+void printBoard(char myBoard[][MAXSIDE])
+{
+    int i, j;
+
+    printf ("    ");
+
+    for (i=1; i<SIDE + 1; i++)
+        printf ("%d ", i);
+
+    printf ("\n\n");
+    int k = 1;
+    for (i=0; i<SIDE; i++)
+    {
+        printf ("%d   ", k);
+
+        for (j=0; j<SIDE; j++)
+            printf ("%c ", myBoard[i][j]);
+        printf ("\n");
+        k++;
+    }
+    return;
+}
 
 void playMinesweeper ()
 {

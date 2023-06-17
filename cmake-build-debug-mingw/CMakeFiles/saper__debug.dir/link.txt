@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\saper__debug.dir/objects.a
+C:\mingw32\bin\ar.exe qc CMakeFiles\saper__debug.dir/objects.a @CMakeFiles\saper__debug.dir\objects1.rsp
+C:\mingw32\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\saper__debug.dir/objects.a -Wl,--no-whole-archive -o saper__debug.exe -Wl,--out-implib,libsaper__debug.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\saper__debug.dir\linklibs.rsp

@@ -1,0 +1,19 @@
+"C:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Piotrek\Desktop\Materiały\obiektowka\cpp\mdig-agh-lang_cpp__exercises-288bd81c85d7\solutions\Projekt_gry_saper -B C:\Users\Piotrek\Desktop\Materiały\obiektowka\cpp\mdig-agh-lang_cpp__exercises-288bd81c85d7\solutions\Projekt_gry_saper\cmake-build-debug-mingw
+-- The C compiler identification is GNU 7.3.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/mingw32/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/mingw32/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- PROJECT: saper
+-- Using AddressSanitizer (ASan).
+-- Found Python: C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python37_64/python.exe (found version "3.7.8") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Piotrek/Desktop/Materiały/obiektowka/cpp/mdig-agh-lang_cpp__exercises-288bd81c85d7/solutions/Projekt_gry_saper/cmake-build-debug-mingw

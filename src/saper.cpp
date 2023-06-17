@@ -5,15 +5,15 @@ void MinesweeperBoard::debug_display() const {
     for (int i = 0; i < height_; i++) {
         for (int j = 0; j < width_; j++) {
             char M = '.', o = '.', F = '.';
-            if (board_[i][j].hasMine_) { M = 'M'; }
+            if (board_[i][j].hasMine_ && board_[i][j].isRevealed_) { M = 'M'; }
             if (board_[i][j].hasFlag_) { F = 'F'; }
             if (board_[i][j].isRevealed_) { o = 'o'; }
             std::cout << "[" << M << F << o << "] ";
         }
         std::cout << std::endl;
     }
-
 }
+
 //ustawianie poziomu trudności, bo komunikacja z konsolą powinna być
 GameMode chooseDifficulty(){
 
@@ -84,6 +84,7 @@ void MinesweeperBoard::place_flag(int row, int col) {
         board_[row][col].hasFlag_ = true;
     }
 }
+
 bool playMinesweeperUntil(char myBoard[][SIZE], char realBoard[][SIZE], int mines[][2], int row,
                           int col, int *movesLeft){
     // warunek ciągłej gry
@@ -100,5 +101,85 @@ bool playMinesweeperUntil(char myBoard[][SIZE], char realBoard[][SIZE], int mine
         return (true);
     }
 
+
+bool isMine (int row, int col, char board[][SIZE])
+{
+    if (board[row][col] == '*')
+        return (true);
+    else
+        return (false);
+}
+
+
+void printBoard(char myBoard[][MAXSIDE])
+{
+    int i, j;
+
+    printf ("    ");
+
+    for (i=1; i<SIDE + 1; i++)
+        printf ("%d ", i);
+
+    printf ("\n\n");
+    int k = 1;
+    for (i=0; i<SIDE; i++)
+    {
+        printf ("%d   ", k);
+
+        for (j=0; j<SIDE; j++)
+            printf ("%c ", myBoard[i][j]);
+        printf ("\n");
+        k++;
+    }
+    return;
+}
+
+void playMinesweeper ()
+{
+    // poczatkowo gra nie jest skonczona
+    bool gameOver = false;
+
+    // prawdziwa plansza (realBoard) oraz wyswietlana plansza (myBoard)
+    char realBoard[MAXSIDE][MAXSIDE], myBoard[MAXSIDE][MAXSIDE];
+
+    int movesLeft = SIDE * SIDE - MINES, x, y;
+    int mines[MAXMINES][2]; // przechowuje wspolrzedne wszystkich min
+
+    initialise (realBoard, myBoard);
+
+    // ustawia losowo miny
+    placeMines (mines, realBoard);
+
+    /*
+    cheatMinesweeper(realBoard);
+    */
+
+    int currentMoveIndex = 0;
+    while (gameOver == false)
+    {
+        printf ("Plansza: \n");
+        printBoard (myBoard);
+        makeMove (&x, &y);
+
+        // instrukcja gwarantujaca, ze pierwszy ruch zawsze bedzie bezpieczny
+        if (currentMoveIndex == 0) //pierwszy ruch
+        {
+            // jesli w pierwszym ruchu uzytkownik natrafi na mine,
+            // to zostanie ona przestawiona funkcja replaceMine
+            if (isMine (x, y, realBoard) == true)
+                replaceMine (x, y, realBoard);
+        }
+
+        currentMoveIndex ++;
+
+        gameOver = playMinesweeperUtil (myBoard, realBoard, mines, x, y, &movesLeft);
+
+        if ((gameOver == false) && (movesLeft == 0))
+        {
+            printf ("\nWygrales!\n");
+            gameOver = true;
+        }
+    }
+    return;
 
 }

@@ -79,12 +79,14 @@ public:
 
     }
 
-    int get_widght() const {
+    int get_width() const {
         return width_;
     }
     int get_height() const {
         return height_;
     }
+
+
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
     
     bool is_game_over() const;

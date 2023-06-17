@@ -2,6 +2,14 @@
 #ifndef PROJEKT_GRY_SAPER_SAPER_HPP
 #define PROJEKT_GRY_SAPER_SAPER_HPP
 
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+//biblioteka do obsługi graficznej
+//#include <SFML/Graphics.hpp>
+
 
 // Biblioteka <cstddef> zawiera definicję typu `std::size_t`.
 #include <cstddef>
@@ -117,6 +125,7 @@ private:
 
 };
 
+GameMode chooseDifficulty();
 
 
 

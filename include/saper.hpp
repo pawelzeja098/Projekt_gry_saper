@@ -135,6 +135,7 @@ private:
 };
 
 GameMode chooseDifficulty();
+void playMinesweeper ();
 
 
 

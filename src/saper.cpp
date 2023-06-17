@@ -84,7 +84,25 @@ void MinesweeperBoard::place_flag(int row, int col) {
         board_[row][col].hasFlag_ = true;
     }
 }
-bool isMine (int row, int col, char board[][MAXSIDE])
+
+bool playMinesweeperUntil(char myBoard[][SIZE], char realBoard[][SIZE], int mines[][2], int row,
+                          int col, int *movesLeft){
+    // warunek ciągłej gry
+    if (myBoard[row][col] != '-')
+        return (false);
+
+    int i, j;
+
+    // gdy trafiona mina
+    if (realBoard[row][col] == "*"){
+        myBoard[row][col] = '*';
+
+        printf("\n GAME OVER \n");
+        return (true);
+    }
+
+
+bool isMine (int row, int col, char board[][SIZE])
 {
     if (board[row][col] == '*')
         return (true);
@@ -163,4 +181,5 @@ void playMinesweeper ()
         }
     }
     return;
+
 }

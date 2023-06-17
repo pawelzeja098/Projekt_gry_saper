@@ -21,6 +21,8 @@
 #include <memory>
 #include <algorithm>
 
+#define SIZE 10
+
 
 
 enum GameMode  { DEBUG, EASY, NORMAL, HARD }; // jakie typy może przyjmować
@@ -137,7 +139,8 @@ private:
 };
 
 // funkcja, która pozawala na ciągłą grę
-bool playMinesweeperUntil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE]
+bool playMinesweeperUntil(char myBoard[][SIZE], char realBoard[][SIZE], int mines[][2], int row,
+                          int col, int *movesLeft);
 
 GameMode chooseDifficulty();
 void playMinesweeper ();

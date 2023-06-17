@@ -28,6 +28,8 @@ struct Score {
     int score;
 };
 
+class RectangleShape;
+
 class MinesweeperBoard {
 public:
     MinesweeperBoard(int width, int height, GameMode mode):  width_(width), height_(height), mode_(mode) {
@@ -67,6 +69,13 @@ public:
         }
         std::cout<< std::endl;
 
+    }
+
+    int get_widght() const {
+        return width_;
+    }
+    int get_height() const {
+        return height_;
     }
     void debug_display() const; // uwaga przy deklarowaniu z const, tak sie robi żeby w src definiować
     

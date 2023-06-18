@@ -40,13 +40,15 @@ void printBoard(char myBoard[][MAXSIDE])
     printf ("    ");
 
     for (i=1; i<SIDE + 1; i++)
-        printf ("%d ", i);
+        if(i<10) printf("0%d ", i);
+        else printf("%d ", i);
 
     printf ("\n\n");
     int k = 1;
     for (i=0; i<SIDE; i++)
     {
-        printf ("%d   ", k);
+        if(i<9) printf ("0%d   ", k);
+        else printf ("%d   ", k);
 
         for (j=0; j<SIDE; j++)
             printf ("%c ", myBoard[i][j]);

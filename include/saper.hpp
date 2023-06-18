@@ -18,6 +18,7 @@ bool isValid(int row, int col);
 
 bool isMine (int row, int col, char board[][MAXSIDE]);
 
+void makeMove(int *x, int *y);
 
 //#include <cstddef>
 //#include<iostream>

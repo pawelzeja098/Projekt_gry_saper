@@ -24,6 +24,9 @@ void printBoard(char myBoard[][MAXSIDE]);
 
 int countAdjacentMines(int row, int col, int mines[][2], char realBoard[][MAXSIDE]);
 
+bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
+                         int mines[][2], int row, int col, int *movesLeft);
+
 ////wymieszanie
 //        std::random_device rd;
 //        std::mt19937 g(rd());

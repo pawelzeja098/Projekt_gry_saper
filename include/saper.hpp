@@ -6,6 +6,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <cstring>
 
 #define EASY 0
 #define NORMAL 1

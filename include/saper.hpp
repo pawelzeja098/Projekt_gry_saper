@@ -14,6 +14,16 @@
 #define MAXMINES 99
 #define MOVESIZE 526 // (25 * 25 - 99)
 
+int SIDE ; // dlugosc boku planszy
+int MINES ; // liczba min
+
+bool isValid(int row, int col)
+{
+    // zwraca true jesli jest prawidlowa
+    return (row >= 0) && (row < SIDE) &&
+           (col >= 0) && (col < SIDE);
+}
+
 
 ////biblioteka do obsługi graficznej
 ////#include <SFML/Graphics.hpp>

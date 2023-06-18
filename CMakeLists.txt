@@ -8,5 +8,5 @@ set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES
         src/saper.cpp
         )
-
+include_directories(SYSTEM ./include)
 add_executable(saper main.cpp include/saper.hpp src/saper.cpp)

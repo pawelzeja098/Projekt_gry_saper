@@ -4,7 +4,7 @@
 # compile CXX with C:/mingw32/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/saper.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
 

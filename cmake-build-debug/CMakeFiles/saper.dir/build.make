@@ -69,6 +69,7 @@ include CMakeFiles/saper.dir/progress.make
 include CMakeFiles/saper.dir/flags.make
 
 CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/flags.make
+CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/includes_CXX.rsp
 CMakeFiles/saper.dir/main.cpp.obj: C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/main.cpp
 CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Piotrek\Desktop\Materialy\Projekt_gry_saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/saper.dir/main.cpp.obj"
@@ -83,6 +84,7 @@ CMakeFiles/saper.dir/main.cpp.s: cmake_force
 	C:\mingw32\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Piotrek\Desktop\Materialy\Projekt_gry_saper\main.cpp -o CMakeFiles\saper.dir\main.cpp.s
 
 CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/flags.make
+CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/includes_CXX.rsp
 CMakeFiles/saper.dir/src/saper.cpp.obj: C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/src/saper.cpp
 CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Piotrek\Desktop\Materialy\Projekt_gry_saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/saper.dir/src/saper.cpp.obj"

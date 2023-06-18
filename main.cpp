@@ -1,19 +1,7 @@
-#include<bits/stdc++.h>
 #include "include/saper.hpp"
+#include<bits/stdc++.h>
 
 using namespace std;
-
-int SIDE ; // dlugosc boku planszy
-int MINES ; // liczba min
-
-// funkcja sprawdzajaca, czy podana komorka o wspolrzednych (row, col)
-// jest prawidlowa
-bool isValid(int row, int col)
-{
-    // zwraca true jesli jest prawidlowa
-    return (row >= 0) && (row < SIDE) &&
-           (col >= 0) && (col < SIDE);
-}
 
 // funkcja sprawdzajaca, czy podana komorka posiada w sobie mine
 bool isMine (int row, int col, char board[][MAXSIDE])

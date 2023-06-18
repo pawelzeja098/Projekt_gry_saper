@@ -3,6 +3,8 @@
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min
 
+std::chrono::steady_clock::time_point startTime;
+
 // funkcja sprawdzajaca, czy podana komorka o wspolrzednych (row, col)
 // jest prawidlowa
 bool isValid(int row, int col)
@@ -294,6 +296,8 @@ void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE])
     return;
 }
 
+
+
 // funkcja umozliwiajaca gre
 void playMinesweeper ()
 {
@@ -334,6 +338,8 @@ cheatMinesweeper(realBoard);
 
         gameOver = playMinesweeperUtil (myBoard, realBoard, mines, x, y, &movesLeft);
 
+
+
         if ((gameOver == false) && (movesLeft == 0))
         {
             printf ("\nWygrales!\n");
@@ -369,7 +375,21 @@ void cheatMinesweeper (char realBoard[][MAXSIDE])
     return;
 }
 
+// Funkcja do rozpoczęcia liczenia czasu
+void startTimer()
+{
+    startTime = std::chrono::steady_clock::now();
+}
 
+// Funkcja do zatrzymania licznika czasu i wyświetlenia czasu gry
+void stopTimer()
+{
+    auto endTime = std::chrono::steady_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::seconds>(endTime - startTime);
+    int seconds = duration.count();
+
+    std::cout << "Czas gry: " << seconds << " sekundy" << std::endl;
+}
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

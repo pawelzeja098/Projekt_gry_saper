@@ -35,7 +35,8 @@ void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE]);
 void playMinesweeper ();
 void replaceMine (int row, int col, char board[][MAXSIDE]);
 void cheatMinesweeper (char realBoard[][MAXSIDE]);
-
+void startTimer();
+void stopTimer();
 
 ///*
 // * dodanie do wektora highscore nazwy i wyniku

@@ -14,8 +14,7 @@ int main()
 
     stopTimer();
 
-
-    return (0);
+    return 0;
 
 
 }

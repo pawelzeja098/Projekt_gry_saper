@@ -1,5 +1,6 @@
+#include <chrono>
 #include "saper.hpp"
-#
+
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min
 
@@ -375,7 +376,8 @@ void cheatMinesweeper (char realBoard[][MAXSIDE])
     return;
 }
 
-// Funkcja do rozpoczęcia liczenia czasu
+
+
 void startTimer()
 {
     startTime = std::chrono::steady_clock::now();
@@ -390,6 +392,8 @@ void stopTimer()
 
     std::cout << "Czas gry: " << seconds << " sekundy" << std::endl;
 }
+
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

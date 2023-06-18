@@ -19,6 +19,15 @@ bool isMine (int row, int col, char board[][MAXSIDE])
         return (false);
 }
 
+void makeMove(int *x, int *y)
+{
+    // sczytywanie ruchu
+    printf("Twoj ruch, (wiersz, kolumna) -> ");
+    scanf("%d %d", x, y);
+    *x = *x - 1;
+    *y = *y - 1;
+    return;
+}
 //    if (level == EASY)
 //    {
 //        SIDE = 9;

@@ -3,28 +3,6 @@
 
 using namespace std;
 
-
-
-//// funkcja sprawdzajaca, czy podana komorka posiada w sobie mine
-//bool isMine (int row, int col, char board[][MAXSIDE])
-//{
-//    if (board[row][col] == '*')
-//        return (true);
-//    else
-//        return (false);
-//}
-
-// funkcja czytajaca ruch uzytkownika
-void makeMove(int *x, int *y)
-{
-    // sczytywanie ruchu
-    printf("Twoj ruch, (wiersz, kolumna) -> ");
-    scanf("%d %d", x, y);
-    *x = *x - 1;
-    *y = *y - 1;
-    return;
-}
-
 // funkcja zwracajaca aktualna tablice
 void printBoard(char myBoard[][MAXSIDE])
 {

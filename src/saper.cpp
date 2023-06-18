@@ -294,6 +294,23 @@ void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE])
     return;
 }
 
+void replaceMine (int row, int col, char board[][MAXSIDE])
+{
+    for (int i=0; i<SIDE; i++)
+    {
+        for (int j=0; j<SIDE; j++)
+        {
+            if (board[i][j] != '*')
+            {
+                board[i][j] = '*';
+                board[row][col] = '-';
+                return;
+            }
+        }
+    }
+    return;
+}
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

@@ -82,38 +82,6 @@ void playMinesweeper ()
     return;
 }
 
-//Funkcja umozliwiajaca wybor poziomu trudnosci
-void chooseDifficultyLevel ()
-{
-    int level;
-
-    printf ("Wybierz poziom trudnosci: \n");
-    printf ("Nacisnij 0 aby wybrac LATWY (plansza o wymiarach 9x9 oraz o 10 minach)\n");
-    printf ("Nacisnij 1 aby wybrac SREDNI (plansza o wymiarach 16x16 oraz o 40 minach)\n");
-    printf ("Nacisnij 2 aby wybrac TRUDNY (plansza o wymiarach 24x24 oraz o 99 minach)\n");
-    printf ("Twoj wybor: ");
-    scanf ("%d", &level);
-
-    if (level == EASY)
-    {
-        SIDE = 9;
-        MINES = 10;
-    }
-
-    if (level == NORMAL)
-    {
-        SIDE = 12;
-        MINES = 30;
-    }
-
-    if (level == HARD)
-    {
-        SIDE = 16;
-        MINES = 50;
-    }
-
-    return;
-}
 
 int main()
 {

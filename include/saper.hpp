@@ -7,14 +7,13 @@
 #include <cstdlib>
 #include <ctime>
 #include <cstring>
-#include <chrono>
 
 #define EASY 0
 #define NORMAL 1
 #define HARD 2
 #define MAXSIDE 17
 #define MAXMINES 50
-#define points 0
+
 
 bool isValid(int row, int col);
 
@@ -36,10 +35,6 @@ void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE]);
 void playMinesweeper ();
 void replaceMine (int row, int col, char board[][MAXSIDE]);
 void cheatMinesweeper (char realBoard[][MAXSIDE]);
-
-void startTimer();
-
-void stopTimer();
 
 
 ///*

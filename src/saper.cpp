@@ -1,5 +1,5 @@
 #include "saper.hpp"
-
+#
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min
 
@@ -267,14 +267,14 @@ void chooseDifficultyLevel ()
 
     if (level == NORMAL)
     {
-        SIDE = 16;
-        MINES = 40;
+        SIDE = 12;
+        MINES = 30;
     }
 
     if (level == HARD)
     {
-        SIDE = 24;
-        MINES = 99;
+        SIDE = 16;
+        MINES = 50;
     }
 
     return;

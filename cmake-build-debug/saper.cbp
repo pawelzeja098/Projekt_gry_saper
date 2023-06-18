@@ -8,92 +8,90 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="saper">
-				<Option output="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/saper.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug"/>
+				<Option output="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/saper.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/./include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/./include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 saper"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 saper"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="saper/fast">
-				<Option output="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/saper.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug"/>
+				<Option output="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/saper.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/./include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/./include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 saper/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 saper/fast"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/include/saper.hpp">
+		<Unit filename="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/include/saper.hpp">
 			<Option target="saper"/>
 		</Unit>
-		<Unit filename="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/main.cpp">
+		<Unit filename="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/main.cpp">
 			<Option target="saper"/>
 		</Unit>
-		<Unit filename="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/src/saper.cpp">
+		<Unit filename="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/src/saper.cpp">
 			<Option target="saper"/>
 		</Unit>
-		<Unit filename="D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy2/CMakeLists.txt">
+		<Unit filename="C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

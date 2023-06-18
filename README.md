@@ -8,8 +8,12 @@ Gra polega na odkrywaniu na planszy poszczególnych pól w taki sposób, aby nie
 
 
 Ustalenie funkcjonalności programu:
-  -użytkownik powinien mieć możliwość wyboru trudności i rozmiaru planszy,
-  -pomysł na urozmaicenie gry: w momencie trafienia na minę pojawia się minigra na czas, której przejście pozwala na dalszą grę.
+  - możliwość wyboru trudności, od którego zależy rozmiar planszy i ilość min
+  - możliwość oflagowania pól
+  - nie ma możliwości trafienia na minę po pierwszym ruchu
+  - tablica najlepszych wyników
 
+Możliwość dalszego rozwoju programu:
+  - po trafieniu na minę uruchamia się minigra z określonym czasem, po przejściu której można grać dalej
 
 

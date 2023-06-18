@@ -3,38 +3,6 @@
 
 using namespace std;
 
-// funkcja umieszczajaca miny w losowych miejscach na planszy
-void placeMines(int mines[][2], char realBoard[][MAXSIDE])
-{
-    bool mark[MAXSIDE*MAXSIDE];
-
-    memset (mark, false, sizeof (mark));
-
-    // kontynuuje, dopoki wszystkie miny nie zostana umieszczone
-    for (int i=0; i<MINES; )
-    {
-        int random = rand() % (SIDE*SIDE);
-        int x = random / SIDE;
-        int y = random % SIDE;
-
-        // ustawia mine w wolnym miejscu
-        if (mark[random] == false)
-        {
-            // polozenie miny dla wspolrzednej wierszowej
-            mines[i][0]= x;
-            // polozenie miny dla wspolrzednej kolumnowej
-            mines[i][1] = y;
-
-            // ustawianie miny na tym miejscu
-            realBoard[mines[i][0]][mines[i][1]] = '*';
-            mark[random] = true;
-            i++;
-        }
-    }
-
-    return;
-}
-
 // funkcja inicjalizujaca gre
 void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE])
 {

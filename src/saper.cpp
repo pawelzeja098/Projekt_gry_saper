@@ -1,5 +1,5 @@
 #include "saper.hpp"
-
+#
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min
 

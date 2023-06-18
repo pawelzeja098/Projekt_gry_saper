@@ -6,6 +6,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <cstring>
 
 #define EASY 0
 #define NORMAL 1
@@ -31,7 +32,7 @@ void placeMines(int mines[][2], char realBoard[][MAXSIDE]);
 
 void chooseDifficultyLevel ();
 void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE]);
-void playMinesweeper ()
+void playMinesweeper ();
 void replaceMine (int row, int col, char board[][MAXSIDE]);
 void cheatMinesweeper (char realBoard[][MAXSIDE]);
 

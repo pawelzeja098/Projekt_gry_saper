@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper
+CMAKE_SOURCE_DIR = D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/saper.dir/depend.make
@@ -70,33 +70,33 @@ include CMakeFiles/saper.dir/flags.make
 
 CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/flags.make
 CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/includes_CXX.rsp
-CMakeFiles/saper.dir/main.cpp.obj: C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/main.cpp
+CMakeFiles/saper.dir/main.cpp.obj: D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy/main.cpp
 CMakeFiles/saper.dir/main.cpp.obj: CMakeFiles/saper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/saper.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/saper.dir/main.cpp.obj -MF CMakeFiles\saper.dir\main.cpp.obj.d -o CMakeFiles\saper.dir\main.cpp.obj -c C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/saper.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/saper.dir/main.cpp.obj -MF CMakeFiles\saper.dir\main.cpp.obj.d -o CMakeFiles\saper.dir\main.cpp.obj -c D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\main.cpp
 
 CMakeFiles/saper.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/saper.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\main.cpp > CMakeFiles\saper.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\main.cpp > CMakeFiles\saper.dir\main.cpp.i
 
 CMakeFiles/saper.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/saper.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\main.cpp -o CMakeFiles\saper.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\main.cpp -o CMakeFiles\saper.dir\main.cpp.s
 
 CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/flags.make
 CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/includes_CXX.rsp
-CMakeFiles/saper.dir/src/saper.cpp.obj: C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/src/saper.cpp
+CMakeFiles/saper.dir/src/saper.cpp.obj: D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy/src/saper.cpp
 CMakeFiles/saper.dir/src/saper.cpp.obj: CMakeFiles/saper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/saper.dir/src/saper.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/saper.dir/src/saper.cpp.obj -MF CMakeFiles\saper.dir\src\saper.cpp.obj.d -o CMakeFiles\saper.dir\src\saper.cpp.obj -c C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\src\saper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/saper.dir/src/saper.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/saper.dir/src/saper.cpp.obj -MF CMakeFiles\saper.dir\src\saper.cpp.obj.d -o CMakeFiles\saper.dir\src\saper.cpp.obj -c D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\src\saper.cpp
 
 CMakeFiles/saper.dir/src/saper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/saper.dir/src/saper.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\src\saper.cpp > CMakeFiles\saper.dir\src\saper.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\src\saper.cpp > CMakeFiles\saper.dir\src\saper.cpp.i
 
 CMakeFiles/saper.dir/src/saper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/saper.dir/src/saper.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\src\saper.cpp -o CMakeFiles\saper.dir\src\saper.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\src\saper.cpp -o CMakeFiles\saper.dir\src\saper.cpp.s
 
 # Object files for target saper
 saper_OBJECTS = \
@@ -112,7 +112,7 @@ saper.exe: CMakeFiles/saper.dir/build.make
 saper.exe: CMakeFiles/saper.dir/linklibs.rsp
 saper.exe: CMakeFiles/saper.dir/objects1.rsp
 saper.exe: CMakeFiles/saper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable saper.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable saper.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\saper.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/saper.dir/clean:
 .PHONY : CMakeFiles/saper.dir/clean
 
 CMakeFiles/saper.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug C:\Users\admin\OneDrive\Dokumenty\GitHub\Projekt_gry_saper\cmake-build-debug\CMakeFiles\saper.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug D:\Programowanie\mdig-agh-lang_cpp__exercises-288bd81c85d7\skeletons\Projekt_gry_sapernowy\cmake-build-debug\CMakeFiles\saper.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/saper.dir/depend
 

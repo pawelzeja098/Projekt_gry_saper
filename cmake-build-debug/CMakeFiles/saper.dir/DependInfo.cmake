@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/main.cpp" "CMakeFiles/saper.dir/main.cpp.obj" "gcc" "CMakeFiles/saper.dir/main.cpp.obj.d"
-  "C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/src/saper.cpp" "CMakeFiles/saper.dir/src/saper.cpp.obj" "gcc" "CMakeFiles/saper.dir/src/saper.cpp.obj.d"
+  "D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy/main.cpp" "CMakeFiles/saper.dir/main.cpp.obj" "gcc" "CMakeFiles/saper.dir/main.cpp.obj.d"
+  "D:/Programowanie/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/Projekt_gry_sapernowy/src/saper.cpp" "CMakeFiles/saper.dir/src/saper.cpp.obj" "gcc" "CMakeFiles/saper.dir/src/saper.cpp.obj.d"
   )
 
 # Targets to which this target links.

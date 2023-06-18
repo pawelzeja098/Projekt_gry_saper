@@ -311,6 +311,13 @@ void replaceMine (int row, int col, char board[][MAXSIDE])
     return;
 }
 
+void cheatMinesweeper (char realBoard[][MAXSIDE])
+{
+    printf ("Miny znajduja sie: \n");
+    printBoard (realBoard);
+    return;
+}
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

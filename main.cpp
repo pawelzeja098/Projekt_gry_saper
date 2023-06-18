@@ -3,17 +3,6 @@
 
 using namespace std;
 
-
-// funkcja ujawniajaca polozenie min
-void cheatMinesweeper (char realBoard[][MAXSIDE])
-{
-    printf ("Miny znajduja sie: \n");
-    printBoard (realBoard);
-    return;
-}
-
-
-
 // funkcja umozliwiajaca gre
 void playMinesweeper ()
 {

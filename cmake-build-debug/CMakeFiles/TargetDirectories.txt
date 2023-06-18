@@ -1,3 +1,3 @@
-C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/CMakeFiles/saper.dir
-C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Piotrek/Desktop/Materialy/Projekt_gry_saper/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/cmake-build-debug/CMakeFiles/saper.dir
+C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/admin/OneDrive/Dokumenty/GitHub/Projekt_gry_saper/cmake-build-debug/CMakeFiles/rebuild_cache.dir

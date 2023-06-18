@@ -7,29 +7,18 @@
 #include <cstdlib>
 #include <ctime>
 
-#define BEGINNER 0
-#define INTERMEDIATE 1
-#define ADVANCED 2
-#define MAXSIDE 25
-#define MAXMINES 99
-#define MOVESIZE 526 // (25 * 25 - 99)
-
-int SIDE ; // dlugosc boku planszy
-int MINES ; // liczba min
-
-bool isValid(int row, int col)
-{
-    // zwraca true jesli jest prawidlowa
-    return (row >= 0) && (row < SIDE) &&
-           (col >= 0) && (col < SIDE);
-}
+#define EASY 0
+#define NORMAL 1
+#define HARD 2
+#define MAXSIDE 17
+#define MAXMINES 50
 
 
-////biblioteka do obsługi graficznej
-////#include <SFML/Graphics.hpp>
-//
-//
-//// Biblioteka <cstddef> zawiera definicję typu `std::size_t`.
+bool isValid(int row, int col);
+
+bool isMine (int row, int col, char board[][MAXSIDE]);
+
+
 //#include <cstddef>
 //#include<iostream>
 //#include<vector>
@@ -38,35 +27,7 @@ bool isValid(int row, int col)
 //#include <random>
 //#include <memory>
 //#include <algorithm>
-//
-//#define SIZE 10
-//
-//
-//
-//enum GameMode  { DEBUG, EASY, NORMAL, HARD }; // jakie typy może przyjmować
-//
-//struct Field{
-//    bool hasMine_ = false;
-//    bool hasFlag_ = false;
-//    bool isRevealed_ = false;
-//} ;
-//
-//struct Score {
-//    std::string name;
-//    int score;
-//};
-//
-//class RectangleShape;
-//
-//class MinesweeperBoard {
-//public:
-//    MinesweeperBoard(int width, int height, GameMode mode):  width_(width), height_(height), mode_(mode) {
-////        board_[0][0].hasMine_ = true;
-////        board_[0][2].hasMine_ = true;
-////        board_[0][2].hasFlag_ = true;
-////        board_[1][1].isRevealed_ = true;
-//        int  size_ = height*width;
-//        float difficulty = 0;
+
 //
 //        if (mode == EASY){difficulty = static_cast<float>(std::ceil(size_ * 0.1));}
 //        else if (mode == NORMAL){difficulty = static_cast<float>(std::ceil(size_ * 0.2));}
@@ -165,4 +126,4 @@ bool isValid(int row, int col)
 //
 //
 //
-#endif //PROJEKT_GRY_SAPER_SAPER_HPP
+#endif

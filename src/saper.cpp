@@ -1,6 +1,44 @@
-//#include "saper.hpp"
+#include "saper.hpp"
+
+int SIDE ; // dlugosc boku planszy
+int MINES ; // liczba min
+
+bool isValid(int row, int col)
+{
+    // zwraca true jesli jest prawidlowa
+    return (row >= 0) && (row < SIDE) &&
+           (col >= 0) && (col < SIDE);
+}
 
 
+bool isMine (int row, int col, char board[][MAXSIDE])
+{
+    if (board[row][col] == '*')
+        return (true);
+    else
+        return (false);
+}
+
+//    if (level == EASY)
+//    {
+//        SIDE = 9;
+//        MINES = 10;
+//    }
+//
+//    if (level == NORMAL)
+//    {
+//        SIDE = 16;
+//        MINES = 40;
+//    }
+//
+//    if (level == HARD)
+//    {
+//        SIDE = 24;
+//        MINES = 99;
+//    }
+//
+//    return;
+//}
 //
 //
 //void MinesweeperBoard::debug_display() const {

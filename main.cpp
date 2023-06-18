@@ -3,14 +3,16 @@
 
 using namespace std;
 
-// funkcja sprawdzajaca, czy podana komorka posiada w sobie mine
-bool isMine (int row, int col, char board[][MAXSIDE])
-{
-    if (board[row][col] == '*')
-        return (true);
-    else
-        return (false);
-}
+
+
+//// funkcja sprawdzajaca, czy podana komorka posiada w sobie mine
+//bool isMine (int row, int col, char board[][MAXSIDE])
+//{
+//    if (board[row][col] == '*')
+//        return (true);
+//    else
+//        return (false);
+//}
 
 // funkcja czytajaca ruch uzytkownika
 void makeMove(int *x, int *y)
@@ -55,28 +57,6 @@ int countAdjacentMines(int row, int col, int mines[][2],
     int i;
     int count = 0;
 
-    /*
-        zlicza wszystkie miny w osmiu sasiadujacych komorkach
-        sprawdza jedynie, gdy ta komorka znajduje sie na planszy
-
-            N.W   N   N.E
-              \   |   /
-               \  |  /
-            W----Kom----E
-                 / | \
-               /   |  \
-            S.W    S   S.E
-
-        Kom --> Aktualna komorka (row, col)
-        1. N -->  Gora        (row-1, col)
-        2. S -->  Dol        (row+1, col)
-        3. E -->  Prawo         (row, col+1)
-        4. W -->  Lewo            (row, col-1)
-        5. N.E--> Prawy gorny rog   (row-1, col+1)
-        6. N.W--> Lewy gorny rog   (row-1, col-1)
-        7. S.E--> Prawy dolny rog   (row+1, col+1)
-        8. S.W--> Lewy dolny rog   (row+1, col-1)
-    */
 
     // 1 (gora)
     if (isValid (row-1, col) == true)
@@ -171,28 +151,6 @@ bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
 
         if (!count)
         {
-            /*
-            powtarza dla wszystkich sasiadujacych komorek
-
-                N.W   N   N.E
-                  \   |   /
-                   \  |  /
-                 W----Kom----E
-                     / | \
-                   /   |  \
-                S.W    S   S.E
-
-            Kom --> Aktualna komorka (row, col)
-            1. N -->  Gora        (row-1, col)
-            2. S -->  Dol        (row+1, col)
-            3. E -->  Prawo         (row, col+1)
-            4. W -->  Lewo            (row, col-1)
-            5. N.E--> Prawy gorny rog   (row-1, col+1)
-            6. N.W--> Lewy gorny rog   (row-1, col-1)
-            7. S.E--> Prawy dolny rog   (row+1, col+1)
-            8. S.W--> Lewy dolny rog   (row+1, col-1)
-            */
-
             // 1 (gora)
             if (isValid (row-1, col) == true)
             {
@@ -382,7 +340,7 @@ void playMinesweeper ()
     return;
 }
 
-// Funkcja umozliwiajaca wybor poziomu trudnosci
+//Funkcja umozliwiajaca wybor poziomu trudnosci
 void chooseDifficultyLevel ()
 {
     int level;
@@ -394,22 +352,22 @@ void chooseDifficultyLevel ()
     printf ("Twoj wybor: ");
     scanf ("%d", &level);
 
-    if (level == BEGINNER)
+    if (level == EASY)
     {
         SIDE = 9;
         MINES = 10;
     }
 
-    if (level == INTERMEDIATE)
+    if (level == NORMAL)
     {
-        SIDE = 16;
-        MINES = 40;
+        SIDE = 12;
+        MINES = 30;
     }
 
-    if (level == ADVANCED)
+    if (level == HARD)
     {
-        SIDE = 24;
-        MINES = 99;
+        SIDE = 16;
+        MINES = 50;
     }
 
     return;

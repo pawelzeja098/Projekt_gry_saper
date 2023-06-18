@@ -338,8 +338,34 @@ cheatMinesweeper(realBoard);
         {
             printf ("\nWygrales!\n");
             gameOver = true;
+                }
+    }
+    return;
+}
+
+void replaceMine (int row, int col, char board[][MAXSIDE])
+{
+    for (int i=0; i<SIDE; i++)
+    {
+        for (int j=0; j<SIDE; j++)
+        {
+            if (board[i][j] != '*')
+            {
+                board[i][j] = '*';
+                board[row][col] = '-';
+                return;
+            }
+
         }
     }
+    return;
+}
+
+
+void cheatMinesweeper (char realBoard[][MAXSIDE])
+{
+    printf ("Miny znajduja sie: \n");
+    printBoard (realBoard);
     return;
 }
 

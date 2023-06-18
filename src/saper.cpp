@@ -56,6 +56,70 @@ void printBoard(char myBoard[][MAXSIDE])
     return;
 }
 
+// funkcja liczaca ilosc min sasiadujacych z komorka
+int countAdjacentMines(int row, int col, int mines[][2], char realBoard[][MAXSIDE])
+{
+    int i;
+    int count = 0;
+
+    // 1 (gora)
+    if (isValid (row-1, col) == true)
+    {
+        if (isMine (row-1, col, realBoard) == true)
+            count++;
+    }
+
+    // 2 (dol)
+    if (isValid (row+1, col) == true)
+    {
+        if (isMine (row+1, col, realBoard) == true)
+            count++;
+    }
+
+    // 3 (prawo)
+    if (isValid (row, col+1) == true)
+    {
+        if (isMine (row, col+1, realBoard) == true)
+            count++;
+    }
+
+    // 4 (lewo)
+    if (isValid (row, col-1) == true)
+    {
+        if (isMine (row, col-1, realBoard) == true)
+            count++;
+    }
+
+    // 5 (prawy gorny rog)
+    if (isValid (row-1, col+1) == true)
+    {
+        if (isMine (row-1, col+1, realBoard) == true)
+            count++;
+    }
+
+    // 6 (lewy gorny rog)
+    if (isValid (row-1, col-1) == true)
+    {
+        if (isMine (row-1, col-1, realBoard) == true)
+            count++;
+    }
+
+    // 7 (prawy dolny rog)
+    if (isValid (row+1, col+1) == true)
+    {
+        if (isMine (row+1, col+1, realBoard) == true)
+            count++;
+    }
+
+    // 8 (lewy dolny rog)
+    if (isValid (row+1, col-1) == true)
+    {
+        if (isMine (row+1, col-1, realBoard) == true)
+            count++;
+    }
+    return (count);
+}
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {
@@ -128,19 +192,3 @@ void printBoard(char myBoard[][MAXSIDE])
 //        for (const auto& score : highscore_) {
 //            std::cout << score.name << ": " << score.score << "\n";
 //        }
-//}
-//void MinesweeperBoard::sort_highscores() {
-//    std::sort(highscore_.begin(), highscore_.end(), [](const Score& s1, const Score& s2) {
-//        return s1.score > s2.score;
-//    });
-//}
-//void MinesweeperBoard::place_flag(int row, int col) {
-//    if (row >= 0 && row < height_ && col >= 0 && col < width_) {
-//        board_[row][col].hasFlag_ = true;
-//    }
-//}
-//
-//
-//
-//
-//

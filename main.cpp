@@ -3,30 +3,6 @@
 
 using namespace std;
 
-// funkcja zwracajaca aktualna tablice
-void printBoard(char myBoard[][MAXSIDE])
-{
-    int i, j;
-
-    printf ("    ");
-
-    for (i=1; i<SIDE + 1; i++)
-        printf ("%d ", i);
-
-    printf ("\n\n");
-    int k = 1;
-    for (i=0; i<SIDE; i++)
-    {
-        printf ("%d   ", k);
-
-        for (j=0; j<SIDE; j++)
-            printf ("%c ", myBoard[i][j]);
-        printf ("\n");
-        k++;
-    }
-    return;
-}
-
 // funkcja liczaca ilosc min sasiadujacych z komorka
 int countAdjacentMines(int row, int col, int mines[][2],
                        char realBoard[][MAXSIDE])

@@ -3,6 +3,8 @@
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min
 
+// funkcja sprawdzajaca, czy podana komorka o wspolrzednych (row, col)
+// jest prawidlowa
 bool isValid(int row, int col)
 {
     // zwraca true jesli jest prawidlowa
@@ -10,7 +12,7 @@ bool isValid(int row, int col)
            (col >= 0) && (col < SIDE);
 }
 
-
+// funkcja sprawdzajaca, czy podana komorka posiada w sobie mine
 bool isMine (int row, int col, char board[][MAXSIDE])
 {
     if (board[row][col] == '*')
@@ -19,6 +21,7 @@ bool isMine (int row, int col, char board[][MAXSIDE])
         return (false);
 }
 
+// funkcja czytajaca ruch uzytkownika
 void makeMove(int *x, int *y)
 {
     // sczytywanie ruchu
@@ -28,28 +31,31 @@ void makeMove(int *x, int *y)
     *y = *y - 1;
     return;
 }
-//    if (level == EASY)
-//    {
-//        SIDE = 9;
-//        MINES = 10;
-//    }
-//
-//    if (level == NORMAL)
-//    {
-//        SIDE = 16;
-//        MINES = 40;
-//    }
-//
-//    if (level == HARD)
-//    {
-//        SIDE = 24;
-//        MINES = 99;
-//    }
-//
-//    return;
-//}
-//
-//
+
+// funkcja zwracajaca aktualna tablice
+void printBoard(char myBoard[][MAXSIDE])
+{
+    int i, j;
+
+    printf ("    ");
+
+    for (i=1; i<SIDE + 1; i++)
+        printf ("%d ", i);
+
+    printf ("\n\n");
+    int k = 1;
+    for (i=0; i<SIDE; i++)
+    {
+        printf ("%d   ", k);
+
+        for (j=0; j<SIDE; j++)
+            printf ("%c ", myBoard[i][j]);
+        printf ("\n");
+        k++;
+    }
+    return;
+}
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

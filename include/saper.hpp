@@ -20,16 +20,9 @@ bool isMine (int row, int col, char board[][MAXSIDE]);
 
 void makeMove(int *x, int *y);
 
-//#include <cstddef>
-//#include<iostream>
-//#include<vector>
-//#include<string>
-//#include <cmath>
-//#include <random>
-//#include <memory>
-//#include <algorithm>
+void printBoard(char myBoard[][MAXSIDE]);
 
-//
+
 //        if (mode == EASY){difficulty = static_cast<float>(std::ceil(size_ * 0.1));}
 //        else if (mode == NORMAL){difficulty = static_cast<float>(std::ceil(size_ * 0.2));}
 //        else if (mode == HARD){difficulty = static_cast<float>(std::ceil(size_ * 0.3));}

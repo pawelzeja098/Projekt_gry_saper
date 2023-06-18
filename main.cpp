@@ -1,12 +1,7 @@
 #include<bits/stdc++.h>
-using namespace std;
+#include "include/saper.hpp"
 
-#define BEGINNER 0
-#define INTERMEDIATE 1
-#define ADVANCED 2
-#define MAXSIDE 25
-#define MAXMINES 99
-#define MOVESIZE 526 // (25 * 25 - 99)
+using namespace std;
 
 int SIDE ; // dlugosc boku planszy
 int MINES ; // liczba min

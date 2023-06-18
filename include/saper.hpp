@@ -1,12 +1,20 @@
-//
-//#ifndef PROJEKT_GRY_SAPER_SAPER_HPP
-//#define PROJEKT_GRY_SAPER_SAPER_HPP
-//
-//#include <iostream>
-//#include <stdio.h>
-//#include <cmath>
-//#include <cstdlib>
-//#include <ctime>
+#ifndef PROJEKT_GRY_SAPER_SAPER_HPP
+#define PROJEKT_GRY_SAPER_SAPER_HPP
+
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+#define BEGINNER 0
+#define INTERMEDIATE 1
+#define ADVANCED 2
+#define MAXSIDE 25
+#define MAXMINES 99
+#define MOVESIZE 526 // (25 * 25 - 99)
+
+
 ////biblioteka do obsługi graficznej
 ////#include <SFML/Graphics.hpp>
 //
@@ -147,4 +155,4 @@
 //
 //
 //
-//#endif //PROJEKT_GRY_SAPER_SAPER_HPP
+#endif //PROJEKT_GRY_SAPER_SAPER_HPP

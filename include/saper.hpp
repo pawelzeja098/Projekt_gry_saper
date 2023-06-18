@@ -27,23 +27,8 @@ int countAdjacentMines(int row, int col, int mines[][2], char realBoard[][MAXSID
 bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
                          int mines[][2], int row, int col, int *movesLeft);
 
-////wymieszanie
-//        std::random_device rd;
-//        std::mt19937 g(rd());
-//        std::shuffle(numer_pola.begin(), numer_pola.end(), g);
-//
-///*
-// * funckja zwiekszajaca wynik
-// */
-//
-//    void increase_score(int points);
-//
-//    /*
-//     * funkcja pobiera wynik osiągnięty przez gracza
-//     */
-//    int get_score() const{
-//        return score_;
-//    }
+void placeMines(int mines[][2], char realBoard[][MAXSIDE]);
+
 ///*
 // * dodanie do wektora highscore nazwy i wyniku
 // */

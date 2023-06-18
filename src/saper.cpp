@@ -277,6 +277,23 @@ void chooseDifficultyLevel ()
 
     return;
 }
+
+void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE])
+{
+    //generuje losowe liczny
+    srand(time (NULL));
+
+    for (int i=0; i<SIDE; i++)
+    {
+        for (int j=0; j<SIDE; j++)
+        {
+            myBoard[i][j] = realBoard[i][j] = '-';
+        }
+    }
+
+    return;
+}
+
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
 //        for (int j = 0; j < width_; j++) {

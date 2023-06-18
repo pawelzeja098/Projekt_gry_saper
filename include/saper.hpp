@@ -30,6 +30,7 @@ bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
 void placeMines(int mines[][2], char realBoard[][MAXSIDE]);
 
 void chooseDifficultyLevel ();
+void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE]);
 ///*
 // * dodanie do wektora highscore nazwy i wyniku
 // */

@@ -3,23 +3,6 @@
 
 using namespace std;
 
-// funkcja inicjalizujaca gre
-void initialise(char realBoard[][MAXSIDE], char myBoard[][MAXSIDE])
-{
-    // generator losowych liczb
-    srand(time (NULL));
-
-    // przydziela wszystkie komorki jako niezaminowane
-    for (int i=0; i<SIDE; i++)
-    {
-        for (int j=0; j<SIDE; j++)
-        {
-            myBoard[i][j] = realBoard[i][j] = '-';
-        }
-    }
-
-    return;
-}
 
 // funkcja ujawniajaca polozenie min
 void cheatMinesweeper (char realBoard[][MAXSIDE])

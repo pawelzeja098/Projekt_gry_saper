@@ -8,10 +8,4 @@ set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_FILES
         src/saper.cpp
         )
-
-set(SOURCES_FILES_TESTS
-        test/saper.cpp
-        )
-
-
-include(SetCommonConfig.cmake)
+add_executable(saper main.cpp include/saper.hpp src/saper.cpp)

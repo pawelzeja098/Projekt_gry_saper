@@ -215,6 +215,37 @@ bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
     }
 }
 
+// funkcja umieszczajaca miny w losowych miejscach na planszy
+void placeMines(int mines[][2], char realBoard[][MAXSIDE])
+{
+    bool mark[MAXSIDE*MAXSIDE];
+
+    memset(mark, false, sizeof (mark));
+
+    // kontynuuje, dopoki wszystkie miny nie zostana umieszczone
+    for (int i=0; i<MINES; )
+    {
+        int random = rand() % (SIDE*SIDE);
+        int x = random / SIDE;
+        int y = random % SIDE;
+
+        // ustawia mine w wolnym miejscu
+        if (mark[random] == false)
+        {
+            // polozenie miny dla wspolrzednej wierszowej
+            mines[i][0]= x;
+            // polozenie miny dla wspolrzednej kolumnowej
+            mines[i][1] = y;
+
+            // ustawianie miny na tym miejscu
+            realBoard[mines[i][0]][mines[i][1]] = '*';
+            mark[random] = true;
+            i++;
+        }
+    }
+
+    return;
+}
 
 //void MinesweeperBoard::debug_display() const {
 //    for (int i = 0; i < height_; i++) {
@@ -227,28 +258,6 @@ bool playMinesweeperUtil(char myBoard[][MAXSIDE], char realBoard[][MAXSIDE],
 //        }
 //        std::cout << std::endl;
 //    }
-//}
-//
-////ustawianie poziomu trudności, bo komunikacja z konsolą powinna być
-//GameMode chooseDifficulty(){
-//
-//    int difficulty;
-//    std::cout << "Podaj poziom trudnosci: " << std::endl;
-//    std::cout << "1 - latwy " << std::endl;
-//    std::cout << "2 - normalny " << std::endl;
-//    std::cout << "3 - trudny " << std::endl;
-//
-//    std::cin >> difficulty;
-//
-//    switch (difficulty)
-//    {
-//        case 0 : return GameMode::DEBUG;
-//        case 1 : return GameMode::EASY;
-//        case 2 : return GameMode::NORMAL;
-//        case 3 : return GameMode::HARD;
-//    }
-//    // w razie gdyby nie to wpisał co trzeaba
-//    return GameMode::DEBUG;
 //}
 //
 ////czy koniec gry
